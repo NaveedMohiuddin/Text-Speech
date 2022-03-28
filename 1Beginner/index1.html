@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input[type=file]::file-selector-button {
+            border: 2px solid #6c5ce7;
+            padding: 1em;
+            border-radius: .2em;
+            background-color: white;
+            transition: 1s;
+            width: 250px;
+            height: 50px;
+        }
+
+        input[type=file]::file-selector-button:hover {
+            background-color: #81ecec;
+            border: 2px solid #00cec9;
+        }
+
+        input[type=file]+label {
+            margin-left: 50px;
+            border: solid;
+            border-color: violet;
+            padding-left: 150px;
+        }
+
+        /* .inputfile+label {
+            font-size: 1.25em;
+            font-weight: 700;
+            color: white;
+            background-color: black;
+            display: inline-block;
+        } */
+
+        .fileupload-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            /* width: 250px; */
+        }
+
+        .outer-div-styles {
+            /* flex: auto; */
+            flex-direction: row ;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <form>
+        <div class="outer-div-styles">
+            <div class="fileupload-container">
+                <input type="file" id="fileUpload">
+            </div>
+            <div>
+                <label for="fileUpload">Choose a file</label>
+            </div>
+        </div>
+        <!-- <label for="fileUpload">Upload file</label> -->
+    </form>
+
+</body>
+
+</html>
